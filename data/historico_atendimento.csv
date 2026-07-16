@@ -1,0 +1,11 @@
+id_atendimento,protocolo,data,canal,tema,subtema,resumo,sentimento,resolvido,tempo_atendimento_min,satisfacao_csat
+ate_001,2025091500001,2025-09-15,chat,Investimentos,CDB,Cliente perguntou sobre rentabilidade e prazos do CDB,neutro,sim,8,5
+ate_002,2025092200002,2025-09-22,telefone,Suporte Tecnico,App,Erro ao visualizar extrato foi corrigido,negativo,sim,15,4
+ate_003,2025100100003,2025-10-01,chat,Investimentos,Tesouro Direto,Cliente pediu explicacao sobre o funcionamento do Tesouro Selic,neutro,sim,10,5
+ate_004,2025101200004,2025-10-12,chat,Planejamento Financeiro,Metas,Cliente acompanhou o progresso da reserva de emergencia,positivo,sim,6,5
+ate_005,2025102500005,2025-10-25,email,Cadastro,Dados Cadastrais,Cliente atualizou e-mail e telefone,neutro,sim,3,4
+ate_006,2025110300006,2025-11-03,whatsapp,Cartao de Credito,Fatura,Cliente questionou cobranca indevida na fatura,negativo,nao,20,2
+ate_007,2025111000007,2025-11-10,app,Pix,Transferencia,Cliente teve duvida sobre limite de Pix noturno,neutro,sim,5,4
+ate_008,2025111800008,2025-11-18,agencia,Investimentos,LCI/LCA,Cliente buscou orientacao para migrar reserva para LCI,positivo,sim,25,5
+ate_009,2025120200009,2025-12-02,telefone,Emprestimo,Consignado,Cliente solicitou simulacao de emprestimo consignado,neutro,sim,12,3
+ate_010,2025121500010,2025-12-15,chat,Seguranca,Golpe,Cliente relatou tentativa de golpe via link falso e recebeu orientacao,negativo,sim,18,5

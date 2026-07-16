@@ -1,0 +1,487 @@
+[
+  {
+    "id": "tesouro_selic",
+    "nome": "Tesouro Selic",
+    "categoria": "renda_fixa",
+    "subcategoria": "Tesouro Direto",
+    "emissor": "Tesouro Nacional",
+    "risco": "baixo",
+    "liquidez": "diaria",
+    "rentabilidade": {
+      "tipo": "pos_fixado",
+      "indexador": "Selic",
+      "percentual_indexador": 100
+    },
+    "prazo": "sem carencia (vencimento 2029, resgate a qualquer momento)",
+    "tributacao": {
+      "ir": "tabela regressiva (22,5% a 15%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "garantido pelo Tesouro Nacional",
+    "taxas": {
+      "administracao": 0.1,
+      "custodia": 0.2,
+      "performance": null
+    },
+    "aporte_minimo": 30.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["conservador", "moderado", "arrojado"],
+    "vantagens": ["liquidez diaria", "baixissimo risco", "aporte minimo acessivel"],
+    "riscos": ["oscilacao marginal de preco em resgates antecipados"],
+    "canal_disponibilidade": ["app", "corretora"],
+    "indicado_para": "Reserva de emergencia e iniciantes"
+  },
+  {
+    "id": "tesouro_prefixado",
+    "nome": "Tesouro Prefixado",
+    "categoria": "renda_fixa",
+    "subcategoria": "Tesouro Direto",
+    "emissor": "Tesouro Nacional",
+    "risco": "medio",
+    "liquidez": "no vencimento (venda antecipada sujeita a marcacao a mercado)",
+    "rentabilidade": {
+      "tipo": "prefixado",
+      "indexador": "Prefixado",
+      "taxa_fixa_aa": 11.5
+    },
+    "prazo": "2031-01",
+    "tributacao": {
+      "ir": "tabela regressiva (22,5% a 15%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "garantido pelo Tesouro Nacional",
+    "taxas": {
+      "administracao": 0.1,
+      "custodia": 0.2,
+      "performance": null
+    },
+    "aporte_minimo": 30.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["moderado", "arrojado"],
+    "vantagens": ["taxa de retorno conhecida no momento da compra", "bom para quem quer previsibilidade"],
+    "riscos": ["perda se vendido antes do vencimento em cenario de alta de juros"],
+    "canal_disponibilidade": ["app", "corretora"],
+    "indicado_para": "Quem quer travar uma taxa de juros e sabe exatamente quanto vai receber no vencimento"
+  },
+  {
+    "id": "tesouro_ipca",
+    "nome": "Tesouro IPCA+",
+    "categoria": "renda_fixa",
+    "subcategoria": "Tesouro Direto",
+    "emissor": "Tesouro Nacional",
+    "risco": "medio",
+    "liquidez": "no vencimento (venda antecipada sujeita a marcacao a mercado)",
+    "rentabilidade": {
+      "tipo": "hibrido",
+      "indexador": "IPCA",
+      "taxa_fixa_aa": 6.0
+    },
+    "prazo": "2035-05",
+    "tributacao": {
+      "ir": "tabela regressiva (22,5% a 15%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "garantido pelo Tesouro Nacional",
+    "taxas": {
+      "administracao": 0.1,
+      "custodia": 0.2,
+      "performance": null
+    },
+    "aporte_minimo": 30.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["moderado", "arrojado"],
+    "vantagens": ["protege o poder de compra contra a inflacao", "ideal para objetivos de longo prazo"],
+    "riscos": ["forte oscilacao de preco no curto prazo (marcacao a mercado)"],
+    "canal_disponibilidade": ["app", "corretora"],
+    "indicado_para": "Aposentadoria e objetivos de longo prazo que precisam de protecao contra a inflacao"
+  },
+  {
+    "id": "cdb_liquidez_diaria",
+    "nome": "CDB Liquidez Diaria",
+    "categoria": "renda_fixa",
+    "subcategoria": "CDB",
+    "emissor": "Banco emissor (varia por instituicao)",
+    "risco": "baixo",
+    "liquidez": "diaria",
+    "rentabilidade": {
+      "tipo": "pos_fixado",
+      "indexador": "CDI",
+      "percentual_indexador": 102
+    },
+    "prazo": "sem carencia",
+    "tributacao": {
+      "ir": "tabela regressiva (22,5% a 15%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "FGC ate R$ 250.000,00 por CPF e instituicao",
+    "taxas": {
+      "administracao": null,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 100.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["conservador", "moderado"],
+    "vantagens": ["liquidez diaria", "protecao do FGC", "rendimento acima da poupanca"],
+    "riscos": ["risco de credito da instituicao emissora, mitigado pelo FGC"],
+    "canal_disponibilidade": ["app", "agencia", "corretora"],
+    "indicado_para": "Quem busca seguranca com rendimento diario"
+  },
+  {
+    "id": "cdb_prefixado",
+    "nome": "CDB Prefixado",
+    "categoria": "renda_fixa",
+    "subcategoria": "CDB",
+    "emissor": "Banco emissor (varia por instituicao)",
+    "risco": "baixo",
+    "liquidez": "no vencimento",
+    "rentabilidade": {
+      "tipo": "prefixado",
+      "indexador": "Prefixado",
+      "taxa_fixa_aa": 12.5
+    },
+    "prazo": "720 dias",
+    "tributacao": {
+      "ir": "tabela regressiva (22,5% a 15%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "FGC ate R$ 250.000,00 por CPF e instituicao",
+    "taxas": {
+      "administracao": null,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 500.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["conservador", "moderado"],
+    "vantagens": ["taxa de retorno conhecida no momento da aplicacao", "protecao do FGC"],
+    "riscos": ["baixa liquidez antes do vencimento"],
+    "canal_disponibilidade": ["app", "agencia", "corretora"],
+    "indicado_para": "Quem pode deixar o dinheiro parado ate o vencimento em troca de uma taxa maior"
+  },
+  {
+    "id": "lci_lca",
+    "nome": "LCI/LCA",
+    "categoria": "renda_fixa",
+    "subcategoria": "Letra de Credito (Imobiliario/Agronegocio)",
+    "emissor": "Banco emissor (varia por instituicao)",
+    "risco": "baixo",
+    "liquidez": "no vencimento (carencia minima de 90 dias)",
+    "rentabilidade": {
+      "tipo": "pos_fixado",
+      "indexador": "CDI",
+      "percentual_indexador": 95
+    },
+    "prazo": "90 dias (carencia minima)",
+    "tributacao": {
+      "ir": "isento para pessoa fisica",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "FGC ate R$ 250.000,00 por CPF e instituicao",
+    "taxas": {
+      "administracao": null,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 1000.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["conservador", "moderado"],
+    "vantagens": ["isencao de Imposto de Renda", "protecao do FGC"],
+    "riscos": ["carencia minima sem liquidez", "aporte minimo mais alto"],
+    "canal_disponibilidade": ["app", "agencia", "corretora"],
+    "indicado_para": "Quem pode esperar 90 dias e quer isencao de IR"
+  },
+  {
+    "id": "debenture_incentivada",
+    "nome": "Debenture Incentivada",
+    "categoria": "renda_fixa",
+    "subcategoria": "Credito Privado",
+    "emissor": "Empresa privada (setor de infraestrutura)",
+    "risco": "medio",
+    "liquidez": "no vencimento (mercado secundario com liquidez limitada)",
+    "rentabilidade": {
+      "tipo": "hibrido",
+      "indexador": "IPCA",
+      "taxa_fixa_aa": 7.5
+    },
+    "prazo": "2030-08",
+    "tributacao": {
+      "ir": "isento para pessoa fisica",
+      "iof": "nao aplicavel"
+    },
+    "garantia": "sem garantia do FGC (risco de credito do emissor)",
+    "taxas": {
+      "administracao": null,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 1000.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["moderado", "arrojado"],
+    "vantagens": ["isencao de IR", "rentabilidade superior a titulos publicos de risco similar"],
+    "riscos": ["risco de credito do emissor privado", "liquidez limitada no mercado secundario"],
+    "canal_disponibilidade": ["corretora"],
+    "indicado_para": "Quem aceita risco de credito privado em troca de isencao de IR e taxa maior"
+  },
+  {
+    "id": "poupanca",
+    "nome": "Poupanca",
+    "categoria": "renda_fixa",
+    "subcategoria": "Poupanca",
+    "emissor": "Banco emissor (varia por instituicao)",
+    "risco": "baixo",
+    "liquidez": "diaria (rendimento apenas no aniversario mensal)",
+    "rentabilidade": {
+      "tipo": "pos_fixado",
+      "indexador": "Selic/TR",
+      "percentual_indexador": null,
+      "observacao": "0,5% a.m. + TR quando Selic > 8,5% a.a.; 70% da Selic + TR quando Selic <= 8,5% a.a."
+    },
+    "prazo": "sem carencia",
+    "tributacao": {
+      "ir": "isento para pessoa fisica",
+      "iof": "isento"
+    },
+    "garantia": "FGC ate R$ 250.000,00 por CPF e instituicao",
+    "taxas": {
+      "administracao": null,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 0.01,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["conservador"],
+    "vantagens": ["simplicidade", "isencao de IR", "protecao do FGC"],
+    "riscos": ["rendimento historicamente abaixo de outros produtos de renda fixa de risco equivalente"],
+    "canal_disponibilidade": ["app", "agencia"],
+    "indicado_para": "Quem prioriza simplicidade e nao se preocupa em otimizar o rendimento"
+  },
+  {
+    "id": "fundo_di",
+    "nome": "Fundo DI",
+    "categoria": "fundo",
+    "subcategoria": "Fundo de Renda Fixa Referenciado DI",
+    "emissor": "Gestora de recursos",
+    "risco": "baixo",
+    "liquidez": "D+1",
+    "rentabilidade": {
+      "tipo": "pos_fixado",
+      "indexador": "CDI",
+      "percentual_indexador": 99
+    },
+    "prazo": "sem carencia",
+    "tributacao": {
+      "ir": "tabela regressiva com come-cotas semestral (15% a 22,5%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "sem garantia do FGC (patrimonio segregado, risco de mercado do fundo)",
+    "taxas": {
+      "administracao": 0.4,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 100.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["conservador", "moderado"],
+    "vantagens": ["liquidez rapida", "gestao profissional", "baixa volatilidade"],
+    "riscos": ["come-cotas reduz o efeito dos juros compostos", "sem garantia do FGC"],
+    "canal_disponibilidade": ["app", "corretora"],
+    "indicado_para": "Substituto de CDB/poupanca para quem quer praticidade com gestao profissional"
+  },
+  {
+    "id": "fundo_multimercado",
+    "nome": "Fundo Multimercado",
+    "categoria": "fundo",
+    "subcategoria": "Fundo Multimercado",
+    "emissor": "Gestora de recursos",
+    "risco": "medio",
+    "liquidez": "D+30 (conversao de cotas + pagamento)",
+    "rentabilidade": {
+      "tipo": "pos_fixado",
+      "indexador": "CDI",
+      "percentual_indexador": null,
+      "observacao": "meta de CDI + 2% a.a., sem garantia de resultado"
+    },
+    "prazo": "sem carencia",
+    "tributacao": {
+      "ir": "tabela regressiva com come-cotas semestral (15% a 22,5%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "sem garantia do FGC (patrimonio segregado, risco de mercado do fundo)",
+    "taxas": {
+      "administracao": 1.5,
+      "custodia": null,
+      "performance": 20.0
+    },
+    "aporte_minimo": 500.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["moderado", "arrojado"],
+    "vantagens": ["diversificacao entre classes de ativos", "gestao ativa profissional"],
+    "riscos": ["rentabilidade nao garantida", "taxa de performance sobre o excedente do benchmark"],
+    "canal_disponibilidade": ["app", "corretora"],
+    "indicado_para": "Perfil moderado que busca diversificacao alem da renda fixa"
+  },
+  {
+    "id": "fundo_acoes",
+    "nome": "Fundo de Acoes",
+    "categoria": "fundo",
+    "subcategoria": "Fundo de Acoes",
+    "emissor": "Gestora de recursos",
+    "risco": "alto",
+    "liquidez": "D+4 (conversao de cotas + pagamento)",
+    "rentabilidade": {
+      "tipo": "variavel",
+      "indexador": "Ibovespa (referencia)",
+      "percentual_indexador": null
+    },
+    "prazo": "sem carencia, recomendado longo prazo",
+    "tributacao": {
+      "ir": "15% sobre o ganho, sem come-cotas",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "sem garantia do FGC (renda variavel)",
+    "taxas": {
+      "administracao": 2.0,
+      "custodia": null,
+      "performance": 20.0
+    },
+    "aporte_minimo": 100.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["arrojado"],
+    "vantagens": ["potencial de retorno elevado no longo prazo", "gestao profissional da carteira"],
+    "riscos": ["alta volatilidade", "possibilidade de perda de capital no curto prazo"],
+    "canal_disponibilidade": ["app", "corretora"],
+    "indicado_para": "Perfil arrojado com foco no longo prazo e tolerancia a oscilacoes"
+  },
+  {
+    "id": "fii",
+    "nome": "Fundo Imobiliario (FII)",
+    "categoria": "renda_variavel",
+    "subcategoria": "Fundo Imobiliario",
+    "emissor": "Gestora de recursos / B3",
+    "risco": "medio",
+    "liquidez": "D+2 (venda em bolsa, sujeita a liquidez do mercado)",
+    "rentabilidade": {
+      "tipo": "variavel",
+      "indexador": "IFIX (referencia) + distribuicao de rendimentos mensais",
+      "percentual_indexador": null
+    },
+    "prazo": "sem carencia, recomendado longo prazo",
+    "tributacao": {
+      "ir": "isento sobre rendimentos mensais para pessoa fisica (cotista com menos de 10% do fundo); 20% sobre ganho de capital na venda das cotas",
+      "iof": "nao aplicavel"
+    },
+    "garantia": "sem garantia do FGC (renda variavel)",
+    "taxas": {
+      "administracao": 1.0,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 100.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["moderado", "arrojado"],
+    "vantagens": ["renda passiva mensal isenta de IR", "exposicao ao mercado imobiliario sem comprar um imovel"],
+    "riscos": ["oscilacao do preco das cotas em bolsa", "risco de vacancia dos imoveis do fundo"],
+    "canal_disponibilidade": ["corretora"],
+    "indicado_para": "Quem busca renda passiva mensal e exposicao ao setor imobiliario"
+  },
+  {
+    "id": "acoes_etf",
+    "nome": "Acoes e ETF (B3)",
+    "categoria": "renda_variavel",
+    "subcategoria": "Acoes / ETF",
+    "emissor": "Empresas listadas / gestoras de ETF",
+    "risco": "alto",
+    "liquidez": "D+2 (venda em bolsa, sujeita a liquidez do ativo)",
+    "rentabilidade": {
+      "tipo": "variavel",
+      "indexador": "Ibovespa (referencia)",
+      "percentual_indexador": null
+    },
+    "prazo": "sem carencia, recomendado longo prazo",
+    "tributacao": {
+      "ir": "15% sobre o ganho em vendas acima de R$ 20.000,00/mes (acoes); regras especificas para ETFs",
+      "iof": "nao aplicavel"
+    },
+    "garantia": "sem garantia do FGC (renda variavel)",
+    "taxas": {
+      "administracao": null,
+      "custodia": null,
+      "performance": null,
+      "corretagem": "varia por corretora (muitas isentam pessoa fisica)"
+    },
+    "aporte_minimo": 10.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["arrojado"],
+    "vantagens": ["potencial de valorizacao elevado", "diversificacao facilitada via ETFs"],
+    "riscos": ["alta volatilidade", "risco especifico de empresa (no caso de acoes individuais)"],
+    "canal_disponibilidade": ["corretora"],
+    "indicado_para": "Perfil arrojado que quer investir diretamente na bolsa de valores"
+  },
+  {
+    "id": "previdencia_privada",
+    "nome": "Previdencia Privada (PGBL/VGBL)",
+    "categoria": "previdencia",
+    "subcategoria": "PGBL/VGBL",
+    "emissor": "Seguradora / banco",
+    "risco": "medio",
+    "liquidez": "no vencimento ou resgate programado (carencia de portabilidade e resgate conforme regulamento)",
+    "rentabilidade": {
+      "tipo": "hibrido",
+      "indexador": "CDI/IPCA (varia por fundo escolhido)",
+      "percentual_indexador": null
+    },
+    "prazo": "longo prazo (aposentadoria)",
+    "tributacao": {
+      "ir": "tabela regressiva (10% a 35%) ou progressiva, conforme regime escolhido",
+      "iof": "nao aplicavel"
+    },
+    "garantia": "sem garantia do FGC (patrimonio segregado, garantido pela seguradora)",
+    "taxas": {
+      "administracao": 1.5,
+      "custodia": null,
+      "performance": null,
+      "carregamento": "0% a 2% (varia por instituicao)"
+    },
+    "aporte_minimo": 100.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["conservador", "moderado", "arrojado"],
+    "vantagens": ["planejamento sucessorio (nao entra em inventario)", "PGBL permite deducao no IR para quem declara pelo modelo completo"],
+    "riscos": ["taxas de administracao e carregamento podem corroer a rentabilidade", "baixa liquidez no curto prazo"],
+    "canal_disponibilidade": ["app", "agencia", "corretora"],
+    "indicado_para": "Planejamento de aposentadoria e sucessao patrimonial de longo prazo"
+  },
+  {
+    "id": "coe",
+    "nome": "COE - Certificado de Operacoes Estruturadas",
+    "categoria": "estruturado",
+    "subcategoria": "COE",
+    "emissor": "Banco emissor",
+    "risco": "medio",
+    "liquidez": "no vencimento (baixa liquidez antes do prazo)",
+    "rentabilidade": {
+      "tipo": "hibrido",
+      "indexador": "cesta de ativos definida no cenario (ex: cambio, indices, acoes)",
+      "percentual_indexador": null,
+      "observacao": "retorno atrelado a cenarios pre-definidos, podendo ter capital protegido ou nao"
+    },
+    "prazo": "2028-03",
+    "tributacao": {
+      "ir": "tabela regressiva (22,5% a 15%)",
+      "iof": "regressivo, apenas se resgatado antes de 30 dias"
+    },
+    "garantia": "sem garantia do FGC; capital protegido depende da modalidade contratada",
+    "taxas": {
+      "administracao": null,
+      "custodia": null,
+      "performance": null
+    },
+    "aporte_minimo": 5000.00,
+    "aporte_maximo": null,
+    "perfil_investidor_compativel": ["moderado", "arrojado"],
+    "vantagens": ["exposicao a cenarios especificos de mercado", "modalidades com protecao do capital investido"],
+    "riscos": ["produto complexo, dificil de comparar com outros investimentos", "baixa liquidez antes do vencimento"],
+    "canal_disponibilidade": ["agencia", "corretora"],
+    "indicado_para": "Investidores experientes que entendem cenarios de mercado e aceitam baixa liquidez"
+  }
+]

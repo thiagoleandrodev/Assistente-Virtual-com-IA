@@ -1,0 +1,16 @@
+id_transacao,data,descricao,estabelecimento,categoria,forma_pagamento,parcela,valor,tipo
+tx_001,2025-10-01,Salario,Empresa XPTO Ltda,receita,ted,1/1,5000.00,entrada
+tx_002,2025-10-02,Aluguel,Imobiliaria Central,moradia,debito_automatico,1/1,1200.00,saida
+tx_003,2025-10-03,Supermercado,Pao de Acucar,alimentacao,cartao_debito,1/1,450.00,saida
+tx_004,2025-10-05,Assinatura Streaming,Netflix,assinaturas,cartao_credito,1/1,55.90,saida
+tx_005,2025-10-07,Farmacia,Drogasil,saude,pix,1/1,89.00,saida
+tx_006,2025-10-10,Restaurante,Restaurante Sabor Caseiro,alimentacao,pix,1/1,120.00,saida
+tx_007,2025-10-12,Corrida de App,Uber,transporte,cartao_credito,1/1,45.00,saida
+tx_008,2025-10-15,Conta de Luz,Enel,moradia,boleto,1/1,180.00,saida
+tx_009,2025-10-20,Mensalidade Academia,Smart Fit,saude,debito_automatico,1/1,99.00,saida
+tx_010,2025-10-25,Combustivel,Posto Ipiranga,transporte,cartao_debito,1/1,250.00,saida
+tx_011,2025-10-28,Compra Eletronicos,Magazine Luiza,lazer,cartao_credito,3/10,89.90,saida
+tx_012,2025-10-30,Aporte Tesouro Selic,Tesouro Direto,investimentos,pix,1/1,300.00,saida
+tx_013,2025-11-01,Curso Online,Alura,educacao,cartao_credito,1/2,49.90,saida
+tx_014,2025-11-05,Transferencia Recebida,Pix de terceiro,receita,pix,1/1,150.00,entrada
+tx_015,2025-11-08,Assinatura Streaming,Spotify,assinaturas,cartao_credito,1/1,21.90,saida

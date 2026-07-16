@@ -1,0 +1,51 @@
+{
+  "id_cliente": "cli_00123",
+  "nome": "João Silva",
+  "cpf": "123.456.789-00",
+  "idade": 32,
+  "profissao": "Analista de Sistemas",
+  "estado_civil": "casado",
+  "dependentes": 1,
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "contato": {
+    "email": "joao.silva@example.com",
+    "telefone": "(11) 91234-5678",
+    "canal_preferido": "app"
+  },
+  "renda_mensal": 5000.00,
+  "gastos_mensais_medios": 2600.00,
+  "patrimonio_total": 15000.00,
+  "reserva_emergencia_atual": 10000.00,
+  "reserva_emergencia_meses_cobertos": 4,
+  "perfil_investidor": "moderado",
+  "score_suitability": 62,
+  "experiencia_investimentos": "iniciante",
+  "horizonte_investimento": "medio_prazo",
+  "tolerancia_risco": "media",
+  "aceita_risco": false,
+  "objetivo_principal": "Construir reserva de emergência",
+  "produtos_atuais": ["tesouro_selic", "poupanca"],
+  "metas": [
+    {
+      "id_meta": "meta_01",
+      "meta": "Completar reserva de emergência",
+      "categoria": "seguranca",
+      "prioridade": "alta",
+      "valor_necessario": 15000.00,
+      "valor_atual": 10000.00,
+      "prazo": "2026-06"
+    },
+    {
+      "id_meta": "meta_02",
+      "meta": "Entrada do apartamento",
+      "categoria": "patrimonio",
+      "prioridade": "media",
+      "valor_necessario": 50000.00,
+      "valor_atual": 3000.00,
+      "prazo": "2027-12"
+    }
+  ],
+  "lgpd_consentimento_dados": true,
+  "data_ultima_atualizacao": "2026-07-01"
+}
